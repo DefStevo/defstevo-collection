@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TempSteuerung", "TempSteuerung\TempSteuerung.vbproj", "{FAD3480A-A593-4AF1-A8A7-AE1DFCEB6C7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAD3480A-A593-4AF1-A8A7-AE1DFCEB6C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD3480A-A593-4AF1-A8A7-AE1DFCEB6C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD3480A-A593-4AF1-A8A7-AE1DFCEB6C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD3480A-A593-4AF1-A8A7-AE1DFCEB6C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
