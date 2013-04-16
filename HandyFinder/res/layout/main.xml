@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TextView android:text="@string/lblText01" android:id="@+id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+<TextView android:text="@string/lblText02" android:id="@+id/TextView02" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+<TextView android:text="@string/lblText03" android:id="@+id/TextView03" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+<TextView android:text="@string/lblText04" android:id="@+id/TextView04" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+<TextView android:text="@string/lblText05" android:id="@+id/TextView05" android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+<EditText android:text="@string/SMSText" android:id="@+id/EditText01" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>
+<CheckBox android:text="@string/cbDeleteSMS" android:id="@+id/CheckBox01" android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+<CheckBox android:text="@string/cbStartWithHandy" android:id="@+id/CheckBox02" android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>
+<Button android:text="@string/btnSave" android:id="@+id/Save" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

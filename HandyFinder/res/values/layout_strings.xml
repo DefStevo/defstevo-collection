@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="lblText01"></string>
+<string name="lblText02"></string>
+<string name="lblText03"></string>
+<string name="lblText04"></string>
+<string name="lblText05">Auf welchen SMS Text soll reagiert werden?</string>
+<string name="cbDeleteSMS">SMS sofort löschen</string>
+<string name="cbStartWithHandy">Gleichzeitig mit Handy starten</string>
+<string name="btnSave">Speichern</string>
+</resources>
