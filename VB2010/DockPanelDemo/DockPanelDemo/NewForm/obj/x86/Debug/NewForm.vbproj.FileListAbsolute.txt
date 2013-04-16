@@ -1,0 +1,13 @@
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\DEV\VB\NewForm\NewForm\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\DEV\VB\NewForm\NewForm\bin\Debug\StevoSoftware.NewForm.exe.config
+D:\DEV\VB\NewForm\NewForm\bin\Debug\StevoSoftware.NewForm.exe
+D:\DEV\VB\NewForm\NewForm\bin\Debug\StevoSoftware.NewForm.pdb
+D:\DEV\VB\NewForm\NewForm\bin\Debug\StevoSoftware.NewForm.xml
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\StevoSoftware.NewForm.frmNewForm.resources
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\StevoSoftware.NewForm.Resources.resources
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\StevoSoftware.NewForm.exe
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\StevoSoftware.NewForm.xml
+D:\DEV\VB\NewForm\NewForm\obj\x86\Debug\StevoSoftware.NewForm.pdb
