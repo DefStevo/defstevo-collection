@@ -1,0 +1,74 @@
+﻿Version=1.50
+IconFile=
+FullScreen=False
+IncludeTitle=True
+NumberOfModules=0
+Package=StevoSoftware.at.MySecond
+Label=My Second
+VersionCode=1
+VersionString=
+Orientation=unspecified
+CanInstallToExternalStorage=False
+NumberOfFiles=2
+File1=loMain.bal
+File2=loWell.bal
+NumberOfLibraries=1
+Library1=core
+@EndOfDesignText@
+'Activity module
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Dim nGlobal As Int
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Dim nRndNumber As Int
+	Dim nNumber As EditText 
+	Dim lbText2 As Label
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	If FirstTime Then
+		Log("START")
+	Else
+		Log("Restart")
+	End If
+	Activity.LoadLayout("loMain")
+	nRndNumber = Rnd(1,100)
+	Log("RndNumber: " & nRndNumber)
+	
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub btGo_Click
+	Log("Number: " & nNumber.text)
+	
+	If nNumber.Text > nRndNumber Then
+		ToastMessageShow("My number is smaller.", False)
+		Log("Toast Text: Smaller")
+		nNumber.SelectAll
+		
+	Else If nNumber.Text < nRndNumber Then
+		ToastMessageShow("My number is larger.", False)
+		Log("Toast Text: Greater")
+		nNumber.SelectAll
+		
+	Else
+		Log("Load Label loWell.bal")
+		Activity.LoadLayout("loWell")
+		Log("Write Text: Well Done")
+		lbText2.Text = "Well Done"
+	End If
+	
+	
+End Sub

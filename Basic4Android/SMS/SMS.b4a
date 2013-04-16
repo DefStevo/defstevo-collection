@@ -1,0 +1,145 @@
+﻿Version=1.50
+IconFile=
+FullScreen=False
+IncludeTitle=True
+NumberOfModules=3
+Module1=svSMS
+ModuleVisible1=1
+Module2=cdSQL
+ModuleVisible2=1
+Module3=cdGPS
+ModuleVisible3=1
+Package=StevoSoftware.at.HandyFinder
+Label=Handy Finder
+VersionCode=1
+VersionString=1.0
+Orientation=unspecified
+CanInstallToExternalStorage=False
+NumberOfFiles=1
+File1=loMain.bal
+NumberOfLibraries=4
+Library1=core
+Library2=gps
+Library3=phone
+Library4=sql
+@EndOfDesignText@
+'Activity module
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	
+	Dim strSMSText, strMailTo, strAppVersion As String
+	strAppVersion = "1.0"
+
+	Dim bSMS, bMail As Boolean
+	
+	Dim iAppSavepoint As Int
+	iAppSavepoint = 1
+		
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	
+	'Variables for Layout
+	Dim cbMail, cbSMS As CheckBox
+	Dim txtSMSText, txtMailTo As EditText
+	Dim btnSwitch As ToggleButton
+	
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Log("Activity Start")
+	
+	Activity.LoadLayout("loMain")
+		
+End Sub
+
+Sub Activity_Resume
+	Log("Initialize DB")
+	cdSQL.Init_DB
+	
+	Log("Read Settings")
+	Read_Settings_From_DB
+	Write_Settings_To_DB
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+	Log("Write Settings")
+	Write_Settings_To_DB
+End Sub
+
+Sub btnSwitch_Click
+	Log("Switch")
+	If btnSwitch.Checked = False Then
+		StopService(svSMS)
+	Else
+		StartService(svSMS)
+	End If
+End Sub
+
+Sub Read_Settings_From_DB
+	Dim cSQL As Cursor
+	cSql = cdSQl.oSQL.ExecQuery("Select Id, Name, Value from tblSettings order by Id")
+	
+	For i = 0 To cSQl.RowCount - 1
+		cSQL.Position = i
+		Log("...cSQL: Position" & i)
+		
+		Select Case cSql.GetInt("Id")
+			Case 0
+				txtSmsText.Text = cSQL.GetString("Value")
+				strSMSText = txtSmsText.Text
+			Case 1
+				txtMailTo.Text = cSQL.GetString("Value")
+				strMailTo = txtMailTo.Text
+			Case 2
+				If cSQL.GetString("Value") = "True" Then
+					cbSMS.Checked = True
+				Else
+					cbSMS.Checked = False
+				End If
+			Case 3
+				If cSQL.GetString("Value") = "True" Then
+					cbMail.Checked = True
+				Else
+					cbMail.Checked = False
+				End If
+		End Select
+		
+	Next
+End Sub
+
+Sub Write_Settings_To_DB
+	cdSQl.Execute_Non_Query("Update tblSettings set Value = '" & txtSmsText.Text & "' where Id = 0")
+	cdSQl.Execute_Non_Query("Update tblSettings set Value = '" & txtMailTo.Text & "' where Id = 1")
+	cdSQl.Execute_Non_Query("Update tblSettings set Value = '" & cbSMS.Checked & "' where Id = 2")
+	cdSQl.Execute_Non_Query("Update tblSettings set Value = '" & cbMail.Checked & "' where Id = 3")
+End Sub
+
+
+Sub txtSMSText_TextChanged (Old As String, New As String)
+	If Old <> New AND New <> "" Then
+		strSMSText = New
+	End If
+	
+	Write_Settings_to_DB
+End Sub
+Sub txtMailTo_TextChanged (Old As String, New As String)
+	If Old <> New AND New <> "" Then
+		strMailTo = New
+	End If
+	
+	Write_Settings_to_DB
+End Sub
+Sub cbSMS_CheckedChange(Checked As Boolean)
+	bSMS = cbSms.Checked
+	
+	Write_Settings_to_DB
+End Sub
+Sub cbMail_CheckedChange(Checked As Boolean)
+	bMail = cbMail.Checked
+	
+	Write_Settings_to_DB
+End Sub
