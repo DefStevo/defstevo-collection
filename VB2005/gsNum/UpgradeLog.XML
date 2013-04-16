@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="gsNumInput_Test">
+</Property><Property Name="Projektmappendatei" Value="D:\DEV\VB2005\Projekte\gsNum\gsNumInput_Test.sln">
+</Property><Property Name="Date" Value="Dienstag, 02. Oktober 2007">
+</Property><Property Name="Time" Value="19:40">
+</Property></Properties><Event ErrorLevel="0" Project="gsNumInput_Test" Source="gsNumInput_Test.vbproj" Description="Projekt erfolgreich konvertiert">
+</Event><Event ErrorLevel="3" Project="gsNumInput_Test" Source="gsNumInput_Test.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="gsNumInput_Test.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="gsNumInput_Test.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="gsNumInput_Test" Source="gsNumInput_Test.vbproj" Description="Überprüfung abgeschlossen: Aktualisierung von Projektdateien nicht erforderlich.">
+</Event></UpgradeLog>

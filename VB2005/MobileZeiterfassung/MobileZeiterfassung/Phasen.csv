@@ -1,0 +1,383 @@
+Projekt;Phase;Bezeichnung;Status;Verrechenbar
+1139;011;Projektleitung;A;J
+1139;012;Implement verr.;A;J
+1139;013;Implement nicht verr.;A;J
+1139;014;Consulting REWE;A;J
+1070;011;Projektleitung;A;J
+1070;012;Implement verr.;A;J
+1070;013;Implement nicht verr.;A;J
+1070;014;Consulting REWE;A;J
+1072;011;Projektleitung;A;J
+1072;012;Implement verr.;A;J
+1072;013;Implement nicht verr.;A;J
+1072;014;Consulting REWE;A;J
+1031;001;Programmierung;A;J
+1194;001;Programmierung;I;J
+1125;011;Projektleitung;A;J
+1125;012;Implement verr.;A;J
+1125;013;Implement nicht verr.;A;J
+1125;014;Consulting REWE;A;J
+2018;011;Projektleitung;A;J
+2018;012;Implement verr.;A;J
+2018;013;Implement nicht verr.;A;J
+2018;014;Consulting REWE;A;J
+3152;011;Projektleitung;A;J
+3152;012;Implement verr.;A;J
+3152;013;Implement nicht verr.;A;J
+3152;014;Consulting REWE;A;J
+2077;001;Projektleitung;A;J
+2077;002;Implementierung verr.;A;J
+2077;003;Implementierung nicht verr.;A;J
+2077;004;Consulting REWE;A;J
+2097;000;***** nicht verrechenb. Leistungen *****;A;J
+2097;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2097;020;div. Tätigkeiten NV ;A;J
+2097;030;Wegzeit NV;A;J
+2097;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2097;110;VTRG 2.1: Projektmanagement;A;J
+2097;120;VTRG 2.3: Protokollierung WaWi+ReWe;A;J
+2097;130;VTRG 2.3: Installation rs2 + DB;A;J
+2097;200;*** WAWI-Implement. verrechenbar ***;A;J
+2097;230;VTRG 2.3: Fakturier+Skidata I+S;A;J
+2097;290;@Unterstützung Echtbetrieb (GoLive);A;J
+2097;300;*** REWE-Implement. - verrechenbar ***;A;J
+2097;310;VTRG 2.3: Analyse Prozesse/Organisation;A;J
+2097;320;VTRG 2.3: FIBU I+S;A;J
+2097;330;@KORE I+S;A;J
+2097;340;@AVZ I+S;A;J
+2097;390;@Unterstützung Echtbetrieb (GoLive);A;J
+2097;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2097;510;VTRG 2.2: Altdatenübernahme;A;J
+2097;515;VTRG 2.4: Reports, Masken, rs2 Admin;A;J
+2097;520;@Schnittstellen zu Fremdsystemen;A;J
+2097;530;@Kore-Konzept;A;J
+2097;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2097;580;@EDV-Leiter Tätigkeiten;A;J
+2097;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2097;590;@Wegzeiten verrechenbar;A;J
+2098;000;***** nicht verrechenb. Leistungen *****;A;J
+2098;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2098;020;div. Tätigkeiten NV ;A;J
+2098;030;Wegzeit NV;A;J
+2098;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2098;120;VTRG 2.3: Protokollierung WaWi+ReWe;A;J
+2098;130;VTRG 2.3: Installation rs2 + DB;A;J
+2098;200;*** WAWI-Implement. verrechenbar ***;A;J
+2098;230;@VTRG 2.3: VERKAUF I+S inkl. Skidata;A;J
+2098;290;@Unterstützung Echtbetrieb (GoLive);A;J
+2098;300;*** REWE-Implement. - verrechenbar ***;A;J
+2102;000;***** nicht verrechenb. Leistungen *****;A;J
+2102;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2102;020;div. Tätigkeiten NV ;A;J
+2102;030;Wegzeit NV;A;J
+2102;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2102;110;VTRG 2.1: Projektmanagement;A;J
+2102;120;VTRG 2.3: Protokollierung WaWi+ReWe;A;J
+2102;130;VTRG 2.3: Installation rs2 + DB;A;J
+2102;200;*** WAWI-Implement. verrechenbar ***;A;J
+2102;300;*** REWE-Implement. - verrechenbar ***;A;J
+2102;310;VTRG 2.3: Analyse Prozesse/Organisation;A;J
+2102;320;VTRG 2.3: FIBU I+S;A;J
+2102;330;@KORE I+S;A;J
+2102;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2102;510;VTRG 2.2: Altdatenübernahme;A;J
+2102;515;VTRG 2.4: Reports, Masken, rs2 Admin;A;J
+2102;520;@Schnittstellen zu Fremdsystemen;A;J
+2102;550;@MIS x.xxx € pro Cube ;A;J
+2102;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2107;000;***** nicht verrechenb. Leistungen *****;A;J
+2107;020;div. Tätigkeiten NV ;A;J
+2107;030;Wegzeit NV;A;J
+2107;200;*** WAWI-Implement. verrechenbar ***;A;J
+2107;210;PRICAT Artikelstamm exportieren;A;J
+2107;220;PARTIN KU/LIEF exportieren;A;J
+2107;225;INSDES Kommissionsscheine ausgeben;A;J
+2107;230;DESADV Kommissionsscheine rückmelden;A;J
+2107;235;RECADV  Wareneingang;A;J
+2107;240;INVRPT Bestandsabgleich                      ;A;J
+2107;250;INVRPT Bestandskorrektur;A;J
+2107;255;HANMOV Umlagerungen;A;J
+2107;270;Leistungstest  EDI Strecken;A;J
+2107;280;Implementierung EDI lt. Pheft;A;J
+2107;285;Sonstige Implementierung;A;J
+2107;300;*** REWE-Implement. - verrechenbar ***;A;J
+2107;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2107;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2107;590;@Wegzeiten verrechenbar;A;J
+2098;310;VTRG 2.3: Analyse Prozesse/Organisation;A;J
+2098;320;VTRG 2.3: FIBU I+S;A;J
+2098;330;KORE I+S;A;J
+2098;340;@AVZ I+S;A;J
+2098;350;@ZSYS I+S;A;J
+2098;360;@IÜRG I+S;A;J
+2098;390;@Unterstützung Echtbetrieb (GoLive);A;J
+2098;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2098;510;VTRG 2.2: Altdatenübernahme;A;J
+2098;515;VTRG 2.4: Reports, Masken, rs2 Admin;A;J
+2098;520;@Schnittstellen zu Fremdsystemen;A;J
+2098;530;@Kore-Konzept;A;J
+2098;540;@EDI x.xxx € pro Strecke;A;J
+2098;550;@MIS x.xxx € pro Cube ;A;J
+2098;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2098;580;@EDV-Leiter Tätigkeiten;A;J
+2098;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2098;590;@Wegzeiten verrechenbar;A;J
+2102;580;@EDV-Leiter Tätigkeiten;A;J
+2102;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2102;590;@Wegzeiten verrechenbar;A;J
+2098;110;VTRG 2.1: Projektmanagement;A;J
+2102;390;@Unterstützung Echtbetrieb (GoLive);A;J
+3079;011;Projektleitung;A;J
+3079;012;Implement verr.;A;J
+3079;013;Implement nicht verr.;A;J
+3079;014;Consulting REWE;A;J
+2114;000;***** nicht verrechenb. Leistungen *****;A;J
+2114;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2114;020;div. Tätigkeiten NV ;A;J
+2114;030;Wegzeit NV;A;J
+2114;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2114;110;Projektmanagement;A;J
+2114;120;Protokollierung WaWi+ReWe;A;J
+2114;130;Installation rs2 + DB;A;J
+2114;200;*** WAWI-Implement. verrechenbar ***;A;J
+2114;220;EINKAUF I+S;A;J
+2114;225;LAGER I+S;A;J
+2114;230;VERKAUF I+S;A;J
+2114;235;@CALL&WARTUNG I+S;A;J
+2114;250;@PPS I+S;A;J
+2114;289;@Sonstige Module I+S Archiv;A;J
+2114;290;@Unterstützung Echtbetrieb (GoLive);A;J
+2114;300;*** REWE-Implement. - verrechenbar ***;A;J
+2114;310;Analyse Prozesse/Organisation;A;J
+2114;320;FIBU I+S;A;J
+2114;330;@KORE I+S;A;J
+2114;360;@IÜRG I+S;A;J
+2114;390;@Unterstützung Echtbetrieb (GoLive);A;J
+2114;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2114;510;Altdatenübernahme;A;J
+2114;515;Reports, Masken, rs2 Admin;A;J
+2114;520;@Schnittstellen zu Fremdsystemen;A;J
+2114;530;@Kore-Konzept;A;J
+2114;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2116;011;Projektleitung;A;J
+2114;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2114;590;@Wegzeiten verrechenbar;A;J
+2116;012;Implementierung verr.;A;J
+2116;013;Implementierung nicht verr.;A;J
+2116;014;Consulting REWE;A;J
+2114;210;Analyse Prozesse/Organisation;A;J
+2112;288;@Inbetriebnahme Kassenschnittstelle;A;J
+2112;150;Planung Phase-2 Barcode, EDI, WebShop;A;J
+2112;000;***** nicht verrechenb. Leistungen *****;A;J
+2112;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2112;020;div. Tätigkeiten NV ;A;J
+2112;030;Wegzeit NV;A;J
+2112;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2112;110;Projektplanung / Überwachung,;A;J
+2112;120;Protokollierung WaWi+ReWe;A;J
+2112;130;Installation rs2 + DB;A;J
+2112;200;*** WAWI-Implement. verrechenbar ***;A;J
+2112;210;Analyse Prozesse/Organisation;A;J
+2112;220;EINKAUF I+S;A;J
+2112;225;LAGER I+S;A;J
+2112;240;@CRM I+S inkl. TAPI;A;J
+2112;289;@Sonst. Module I+S  rs2 ARCHIV, PostPRG;A;J
+2112;290;@Unterstützung Echtbetrieb (GoLive);A;J
+2112;300;*** REWE-Implement. - verrechenbar ***;A;J
+2112;310;Analyse Prozesse/Organisation;A;J
+2112;320;FIBU I+S;A;J
+3101;280;Unterstützung Echtbetrieb (GoLive);A;J
+3101;300;*** REWE-Implement. - verrechenbar ***;A;J
+3101;310;Analyse Abläufe/Rahmenbedingungen;A;J
+3101;330;Fibu-Einführung (Schulung, Impl.);A;J
+3101;340;Kore-Einführung (Schulung, Impl.);A;J
+3101;350;AVZ-Einführung (Schulung, Impl.);A;J
+3101;380;Unterstützung Echtbetrieb (GoLive);A;J
+3101;500;***variabel: keine vertragl. Planzeit***;A;J
+3101;510;Altdatenübernahme;A;J
+2112;330;@KORE I+S;A;J
+2112;390;@Unterstützung Echtbetrieb (GoLive);A;J
+2112;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2112;510;Altdatenübernahme;A;J
+2112;515;Reports, Masken, rs2 Admin;A;J
+2112;520;IMPL Schnittstellen zu Fremdsys. (EDI Pauschale);A;J
+2112;530;@Kore-Konzept;A;J
+2112;540;@EDI / MDE Strecken;A;J
+2112;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2112;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2112;590;@Wegzeiten verrechenbar;A;J
+3101;520;Schnittstellen;A;J
+3101;530;Kore-Konzept;A;J
+3101;590;Wegzeiten (für Phasen 0xxx - 4xxx);A;J
+2902;001;Projektleitung;A;J
+2902;002;Implementierung verr.;A;J
+2902;003;Implementierung nicht verr.;A;J
+2902;004;Consulting REWE;A;J
+2112;230;VERKAUF I+S;A;J
+3104;000;***** nicht verrechenbar *****;A;J
+3104;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+3104;020;div. Tätigkeiten NV (für Phasen 1xx-5xx);A;J
+3104;100;*** Allgem.-Implement. verrechenbar ***;A;J
+3104;110;Planung/Projektleitung;A;J
+3104;130;Installation;A;J
+3104;140;Systemadmin/Schulung;A;J
+3104;200;*** WAWI-Implement. verrechenbar ***;A;J
+3104;210;Analyse;A;J
+3104;220;Parametrisierung I;A;J
+3104;230;Schulung;A;J
+3104;240;Parametrisierung II;A;J
+3104;280;Unterstützung Echtbetrieb (GoLive);A;J
+3104;300;*** REWE-Implement. - verrechenbar ***;A;J
+3104;310;Analyse Abläufe/Rahmenbedingungen;A;J
+3104;330;Fibu-Einführung (Schulung, Impl.);A;J
+3104;340;Kore-Einführung (Schulung, Impl.);A;J
+3104;350;AVZ-Einführung (Schulung, Impl.);A;J
+3104;380;Unterstützung Echtbetrieb (GoLive);A;J
+3104;500;***variabel: keine vertragl. Planzeit***;A;J
+3104;510;Altdatenübernahme;A;J
+3104;520;Schnittstellen;A;J
+3104;530;Kore-Konzept;A;J
+3104;590;Wegzeiten (für Phasen 0xxx - 4xxx);A;J
+3130;013;Implement nicht verr.;A;J
+2071;000;***** nicht verrechenb. Leistungen *****;A;J
+2071;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2071;020;div. Tätigkeiten NV ;A;J
+2071;030;Wegzeit NV;A;J
+2071;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2071;110;Planung / Projektleitung;A;J
+2071;120;Protokollierung;A;J
+2071;130;Installation rs2 + DB;A;J
+2071;140;Systemadministration rs2;A;J
+2071;200;*** WAWI-Implement. verrechenbar ***;A;J
+2071;210;Analyse Prozesse / Organisation;A;J
+2071;220;EINKAUF I+S;A;J
+2071;225;LAGER I+S;A;J
+2071;230;VERKAUF I+S;A;J
+2071;250;PPS I+S;A;J
+2071;290;Unterstützung Echtbetrieb (GoLive);A;J
+2071;300;*** REWE-Implement. - verrechenbar ***;A;J
+2071;500;*** nicht in vertr. IMPL enthalten *** ;A;J
+3093;000;***** nicht verrechenbar *****;A;J
+3093;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+3093;020;div. Tätigkeiten NV (für Phasen 1xx-5xx);A;J
+3093;100;*** Allgem.-Implement. verrechenbar ***;A;J
+3093;110;Planung/Projektleitung;A;J
+3093;130;Installation;A;J
+3093;140;Systemadmin/Schulung;A;J
+3093;200;*** WAWI-Implement. verrechenbar ***;A;J
+3093;210;Analyse;A;J
+3093;220;Parametrisierung I;A;J
+3093;230;Schulung;A;J
+3093;240;Parametrisierung II;A;J
+3093;280;Unterstützung Echtbetrieb (GoLive);A;J
+3093;300;*** REWE-Implement. - verrechenbar ***;A;J
+3093;310;Analyse Abläufe/Rahmenbedingungen;A;J
+3093;330;Fibu-Einführung (Schulung, Impl.);A;J
+3093;340;Kore-Einführung (Schulung, Impl.);A;J
+3093;350;AVZ-Einführung (Schulung, Impl.);A;J
+3093;380;Unterstützung Echtbetrieb (GoLive);A;J
+3093;500;***variabel: keine vertragl. Planzeit***;A;J
+3093;510;Altdatenübernahme;A;J
+3093;520;Schnittstellen;A;J
+3093;530;Kore-Konzept;A;J
+3093;590;Wegzeiten (für Phasen 0xxx - 4xxx);A;J
+3041;011;Projektleitung;A;J
+3041;012;Implement verr.;A;J
+3041;013;Implement nicht verr.;A;J
+3130;011;Projektleitung;A;J
+3130;012;Implement verr.;A;J
+3041;014;Consulting REWE;A;J
+3041;021;CRM Modul;A;J
+3044;011;Projektleitung;A;J
+3044;012;Implement verr.;A;J
+3044;013;Implement nicht verr.;A;J
+3044;014;Consulting REWE;A;J
+3060;000;***** nicht verrechenbar *****;A;J
+3060;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+3060;020;div. Tätigkeiten NV (für Phasen 1xx-5xx);A;J
+3060;100;*** Allgem.-Implement. verrechenbar ***;A;J
+3060;110;Planung/Projektleitung;A;J
+3060;130;Installation;A;J
+3060;140;Systemadmin/Schulung;A;J
+3060;200;*** WAWI-Implement. verrechenbar ***;A;J
+3060;250;Einführung Fakturierung;A;J
+3060;280;Unterstützung Echtbetrieb (GoLive);A;J
+2071;510;@Altdatenübernahme;A;J
+2071;515;@Reportgestaltung, Maskendesign, rs2 ADM;A;J
+2071;520;@Schnittstellen zu Fremdsystemen;A;J
+2071;530;@Kore-Konzept;A;J
+2071;540;@EDI x.xxx € pro Strecke;A;J
+2071;550;@MIS x.xxx € pro Cube ;A;J
+2071;580;@EDV-Leiter Tätigkeiten;A;J
+2071;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2071;590;@Wegzeiten verrechenbar;A;J
+3130;014;Consulting REWE;A;J
+3101;000;***** nicht verrechenbar *****;A;J
+3101;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+3101;020;div. Tätigkeiten NV (für Phasen 1xx-5xx);A;J
+3101;100;*** Allgem.-Implement. verrechenbar ***;A;J
+3101;110;Planung/Projektleitung;A;J
+3101;130;Installation;A;J
+3101;140;Systemadmin/Schulung;A;J
+3101;200;*** WAWI-Implement. verrechenbar ***;A;J
+3101;210;Analyse;A;J
+3101;220;Parametrisierung I;A;J
+3101;230;Schulung;A;J
+3101;240;Parametrisierung II;A;J
+3060;300;*** REWE-Implement. - verrechenbar ***;A;J
+3060;310;Analyse Abläufe/Rahmenbedingungen;A;J
+3060;330;Fibu-Einführung (Schulung, Impl.);A;J
+3060;340;Kore-Einführung (Schulung, Impl.);A;J
+3060;350;AVZ-Einführung (Schulung, Impl.);A;J
+3060;360;Zeitsys-Einführung (Schulung, Impl.);A;J
+3060;370;IURG-Einführung (Schulung, Impl.);A;J
+3060;380;Unterstützung Echtbetrieb (GoLive);A;J
+3060;500;***variabel: keine vertragl. Planzeit***;A;J
+3060;510;Altdatenübernahme;A;J
+3060;520;Schnittstellen;A;J
+3060;530;Kore-Konzept;A;J
+3060;540;Reportgestaltung und -anpassung;A;J
+3060;590;Wegzeiten (für Phasen 0xxx - 4xxx);A;J
+2128;000;***** nicht verrechenb. Leistungen *****;A;J
+2128;010;Einarbeitung NV  (Aufbau Basiswissen);A;J
+2128;020;div. Tätigkeiten NV ;A;J
+2128;030;Wegzeit NV;A;J
+2128;100;*** Allgem.-Implement. verrechenbar ***;A;J
+2128;110;Projektmanagement;A;J
+2128;120;Protokollierung WaWi+ReWe;A;J
+2128;130;Installation rs2 + DB;A;J
+2128;200;*** WAWI-Implement. verrechenbar ***;A;J
+2128;210;Analyse Prozesse/Organisation;A;J
+2128;220;EINKAUF I+S;A;J
+2128;225;LAGER I+S;A;J
+2128;230;VERKAUF I+S;A;J
+2128;235;@CALL&WARTUNG I+S;A;J
+2128;240;@CRM I+S inkl. TAPI;A;J
+2128;250;PPS I+S;A;J
+2128;289;@Sonstige Module I+S DMS;A;J
+2128;290;@Unterstützung Echtbetrieb (GoLive);A;J
+2128;300;*** REWE-Implement. - verrechenbar ***;A;J
+2128;310;Analyse Prozesse/Organisation;A;J
+2128;320;FIBU I+S;A;J
+2128;330;@KORE I+S;A;J
+2128;340;@AVZ I+S;A;J
+2128;350;@ZSYS I+S;A;J
+2128;390;@Unterstützung Echtbetrieb (GoLive);A;J
+2128;500;*** Sonstige Implement. verrechenbar*** ;A;J
+2128;510;Altdatenübernahme;A;J
+2128;515;Reports, Masken, rs2 Admin;A;J
+2128;520;@Schnittstellen zu Fremdsystemen;A;J
+2128;530;@Kore-Konzept;A;J
+2128;540;@EDI x.xxx € pro Strecke;A;J
+2128;555;@INFO Module nach GoLive (zB. Statistik);A;J
+2128;580;@EDV-Leiter Tätigkeiten;A;J
+2128;585;@Sonst. vertragl. nicht geplante Zeiten;A;J
+2128;590;@Wegzeiten verrechenbar;A;J
+2129;011;Projektleitung;A;J
+2129;012;Implementierung verrechenbar;A;J
+2129;013;Implementierung nicht verrechenbar;A;J
+2129;014;Consulting ReWe;A;J
+2125;011;Projektleitung;A;J
+2125;012;Implementierung verr.;A;J
+2125;013;Implementierung nicht verr.;A;J
+2125;014;Consulting REWE;A;J
