@@ -1,0 +1,5 @@
+frmVCR = 22, 29, 716, 518, , 0, 0, 0, 0, C
+clsTape = 0, 0, 0, 0, C
+frmSetTime = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+clsRecorder = 0, 0, 0, 0, C
+VCRModule = 44, 58, 830, 657, 

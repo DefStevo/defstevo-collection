@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8366a867-6c9c-4e23-a9e8-9cd3661eeb25" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/CacheSyncService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CacheSyncService.wsdl" MetadataType="Wsdl" ID="a95e9f72-5dd4-4c06-8ff4-f543065a20ae" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?wsdl" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="ec172142-9014-477c-b7d1-b4a75e5563f9" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd6" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="e208d6aa-452f-4dc3-b309-5eb8b41a7019" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd0" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4ec87fb0-f3d3-4295-85bd-3d90738a889b" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd2" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="6579c1f2-fbbd-44ca-9c57-4360be2203fa" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd5" />
+    <MetadataFile FileName="item4.xsd" MetadataType="Schema" ID="a2d1519f-8c08-4ee5-a624-56ef0899a343" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd1" />
+    <MetadataFile FileName="item5.xsd" MetadataType="Schema" ID="3bf61bef-dd86-4a70-954a-8fcf908efaf0" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd3" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="1e811fcf-e61c-4132-81e5-8102b1e2f103" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?disco" />
+    <MetadataFile FileName="item6.xsd" MetadataType="Schema" ID="b4106781-eb90-43c0-a328-7a00d9ee99dc" SourceId="1" SourceUrl="http://localhost:8080/CacheSyncService/?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Webshop>
+	<MailParameter 	Server = "mail.rs-soft.com" 
+			Port="25" 
+			User="GURUS\editest" 
+			Pass = "demo" 
+			From="editest@rs-soft.com" 
+			To = "sdehner@rs-soft.com" 
+			Subject = "fehler beim Webshop Upload"
+	/>
+
+	<WebShopDetail	Server = "http://www.demmer.at/admin/custom/import.php"
+			User= "upload"
+			Pass = "keri39w!"
+	/>
+
+	<WebShopGH		Server = "http://www.demmertee.com/admin/custom/import.php"
+			User = "upload"
+			Pass = "keri39w!"
+	/>
+</Webshop>	

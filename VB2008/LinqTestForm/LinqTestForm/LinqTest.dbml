@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="LinqTest" Class="LinqTestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WINXP\SQLEXPRESS;Initial Catalog=LinqTest;User ID=LinqTest" SettingsObjectName="LinqTestForm.My.MySettings" SettingsPropertyName="LinqTestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.customers" Member="customers">
+    <Type Name="customers">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="name2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="adress" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="country_ISO" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Association Name="customers_orders" Member="orders" ThisKey="id" OtherKey="customer_id" Type="orders" />
+    </Type>
+    <UpdateFunction FunctionId="FunctionId1">
+      <Argument Parameter="number" Member="number" />
+      <Argument Parameter="name1" Member="name1" />
+      <Argument Parameter="name2" Member="name2" />
+      <Argument Parameter="adress" Member="adress" />
+      <Argument Parameter="zip" Member="zip" />
+      <Argument Parameter="city" Member="city" />
+      <Argument Parameter="country" Member="country" />
+      <Argument Parameter="country_ISO" Member="country_ISO" />
+      <Argument Parameter="original_ID" Member="id" Version="Original" />
+    </UpdateFunction>
+  </Table>
+  <Table Name="dbo.orders" Member="orders">
+    <Type Name="orders">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="number" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="customers_orders" Member="customers" ThisKey="customer_id" OtherKey="id" Type="customers" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Id="FunctionId1" Name="dbo.UpdateCustomers" Method="UpdateCustomers">
+    <Parameter Name="Number" Parameter="number" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Name1" Parameter="name1" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Name2" Parameter="name2" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Adress" Parameter="adress" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="zip" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="city" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country_ISO" Type="System.String" DbType="NVarChar(2)" />
+    <Parameter Name="Original_ID" Parameter="original_ID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="UpdateCustomers_Ergebnis">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="number" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="name1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="name2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="adress" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="zip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="country_ISO" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

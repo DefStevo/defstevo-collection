@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="3edc02b0-d439-46f3-8693-f787cb44ca15" parentDesignerName="Cache" codeGenerationMode="Client and Server" synchronizeInOneTransaction="false" clientFileLocation="b9bcf49b-1cfd-4faf-b01a-ee62f6f603be" serverFileLocation="eddd561a-6580-4334-89d9-819e786101fe" isRootSyncDesigner="true" rootSyncDesignerShouldGenerateCode="true" serverFileHintPath="..\SyncService\Cache.Server.sync" rootSyncDesignerCodeGenerationMode="ClientOnly" isClientSyncDesigner="false" isServerSyncDesigner="false" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncAdapters>
+    <syncAdapter Id="c66be568-d182-4af2-887f-7457d2e3c0c5" name="CustomersSyncAdapter" tableName="Customers">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+  </syncAdapters>
+  <syncTables>
+    <syncTable Id="76d9cb09-4828-4192-9771-41690e2a5d3e" name="CustomersSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="Customers" deletedItemsTableName="Customers_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.Customers" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="66bf5d14-a956-4906-b51a-77523dd94ff9" name="CustomersSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="8a392deb-474c-4ca4-8dc2-f820e5073304" name="CacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <serverSyncProvider>
+    <serverSyncProvider Id="9d27e978-f024-4517-8915-6783f85b3ebe" name="CacheServerSyncProvider">
+      <syncAdapters>
+        <syncAdapterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncAdapter" />
+      </syncAdapters>
+      <syncConnection>
+        <syncConnectionMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/ServerConnection" />
+      </syncConnection>
+      <selectNewAnchorCommand>
+        <syncAdapterCommandMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/selectNewAnchorCmd" />
+      </selectNewAnchorCommand>
+    </serverSyncProvider>
+  </serverSyncProvider>
+  <syncAgent>
+    <syncAgent name="CacheSyncAgent" synchronizeInOneTransaction="false">
+      <serverSyncProvider>
+        <serverSyncProviderMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CacheServerSyncProvider" />
+      </serverSyncProvider>
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/CustomersSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncAdapterCommands>
+    <syncAdapterCommand Id="c1e5ed5b-f2ee-47d0-8a19-592f1a038c87" commandText="INSERT INTO dbo.Customers ([CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax], [LastEditDate], [CreationDate]) VALUES (@CustomerID, @CompanyName, @ContactName, @ContactTitle, @Address, @City, @Region, @PostalCode, @Country, @Phone, @Fax, @LastEditDate, @CreationDate) SET @sync_row_count = @@rowcount" commandType="Text" name="CustomersSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CustomerID" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CompanyName" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@ContactName" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@ContactTitle" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Address" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@City" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Region" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@PostalCode" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Country" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Phone" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Fax" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@LastEditDate" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CreationDate" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_row_count" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="523b44c5-dec1-4d6b-b958-2e0d9594534f" commandText="DELETE FROM dbo.Customers WHERE ([CustomerID] = @CustomerID) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="CustomersSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CustomerID1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_force_write" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_last_received_anchor" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_row_count1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="a5b60424-0760-44ee-9d63-2523b44f3a90" commandText="UPDATE dbo.Customers SET [CompanyName] = @CompanyName, [ContactName] = @ContactName, [ContactTitle] = @ContactTitle, [Address] = @Address, [City] = @City, [Region] = @Region, [PostalCode] = @PostalCode, [Country] = @Country, [Phone] = @Phone, [Fax] = @Fax, [LastEditDate] = @LastEditDate, [CreationDate] = @CreationDate WHERE ([CustomerID] = @CustomerID) AND (@sync_force_write = 1 OR ([LastEditDate] &lt;= @sync_last_received_anchor)) SET @sync_row_count = @@rowcount" commandType="Text" name="CustomersSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CompanyName1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@ContactName1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@ContactTitle1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Address1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@City1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Region1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@PostalCode1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Country1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Phone1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@Fax1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@LastEditDate1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CreationDate1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CustomerID2" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_force_write1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_last_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_row_count2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="8929c9ae-fd2f-4b29-8b0b-be2f8e777f42" commandText="SELECT [CustomerID], [DeletionDate] FROM [Customers_Tombstone] WHERE ([CustomerID] = @CustomerID)" commandType="Text" name="CustomersSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CustomerID3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="5fac5bb5-f492-4cdb-b1d0-7fbd9ea1f137" commandText="SELECT [CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax], [LastEditDate], [CreationDate] FROM dbo.Customers WHERE ([CustomerID] = @CustomerID)" commandType="Text" name="CustomersSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@CustomerID4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="bcab71e5-707e-4e1d-8239-3e79a97b9cbd" commandText="SELECT [CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax], [LastEditDate], [CreationDate] FROM dbo.Customers WHERE ([CreationDate] &gt; @sync_last_received_anchor AND [CreationDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="CustomersSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_last_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_new_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="96d39fd2-9a3c-4ee6-b118-d773374f8037" commandText="SELECT [CustomerID], [DeletionDate] FROM [Customers_Tombstone] WHERE (@sync_initialized = 1 AND [DeletionDate] &gt; @sync_last_received_anchor AND [DeletionDate] &lt;= @sync_new_received_anchor)" commandType="Text" name="CustomersSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_initialized" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_last_received_anchor3" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_new_received_anchor1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="1a02988a-8e76-42e3-aa1d-162947bb65d5" commandText="SELECT [CustomerID], [CompanyName], [ContactName], [ContactTitle], [Address], [City], [Region], [PostalCode], [Country], [Phone], [Fax], [LastEditDate], [CreationDate] FROM dbo.Customers WHERE ([LastEditDate] &gt; @sync_last_received_anchor AND [LastEditDate] &lt;= @sync_new_received_anchor AND [CreationDate] &lt;= @sync_last_received_anchor)" commandType="Text" name="CustomersSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_last_received_anchor4" />
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_new_received_anchor2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="6fd2cefe-1563-468c-979d-d3d16126fd90" commandText="Select @sync_new_received_anchor = GETUTCDATE()" commandType="Text" name="selectNewAnchorCmd" commandKind="SelectNewAnchorCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/3edc02b0-d439-46f3-8693-f787cb44ca15/@sync_new_received_anchor3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+  </syncAdapterCommands>
+  <syncAdapterCommandParameters>
+    <syncAdapterCommandParameter Id="0440caff-4dd8-408d-8b8d-92055a2576da" parameterType="NChar" parameterName="@CustomerID" name="@CustomerID" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4fd78584-b4d0-4785-ba1a-a5968f3b6489" parameterType="NVarChar" parameterName="@CompanyName" name="@CompanyName" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f8dea76c-24af-4fd2-bd2a-12ca01ac7437" parameterType="NVarChar" parameterName="@ContactName" name="@ContactName" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="cf1049b7-7909-43d5-aa62-a917b6c33d8a" parameterType="NVarChar" parameterName="@ContactTitle" name="@ContactTitle" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7fc9a784-fa10-4b19-8427-6731c62e900f" parameterType="NVarChar" parameterName="@Address" name="@Address" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="213bcdcc-fc9e-4ea2-9941-f0c02a29fd52" parameterType="NVarChar" parameterName="@City" name="@City" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="ba540d48-50c2-46f7-ac55-fe76bf32f6ab" parameterType="NVarChar" parameterName="@Region" name="@Region" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d4d3cf1d-95b3-4ce8-bf1e-730414a83499" parameterType="NVarChar" parameterName="@PostalCode" name="@PostalCode" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e00df572-4de0-4b9d-add0-2449c430a0af" parameterType="NVarChar" parameterName="@Country" name="@Country" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6c42e16a-3922-44a8-bd04-0c5ec54cd5c4" parameterType="NVarChar" parameterName="@Phone" name="@Phone" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5bd5ad0c-b695-43a2-aaa2-01b67576766d" parameterType="NVarChar" parameterName="@Fax" name="@Fax" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5e70a5fe-c504-4e26-bdef-fcb5b0fca2d0" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="38ae32f1-67b9-48b3-8348-8bed0e4ed710" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8a9ea3c4-91b4-42b8-8a1b-8a98b1f29102" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="34f7b173-09a3-4956-9980-fe07937a5469" parameterType="NChar" parameterName="@CustomerID" name="@CustomerID1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="cd6a80b3-d9fa-46f8-b8e5-0fe8d49ee9c4" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="bd4dd90d-f1fd-4b57-94cc-2f5c62b1eab4" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8ef1bb54-6eb9-4e3e-93cd-eb50a9be108f" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count1" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="75b9f50b-a21e-42df-bd05-286c122b1288" parameterType="NVarChar" parameterName="@CompanyName" name="@CompanyName1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="aa006dba-de32-42d4-a16e-8425e31c8e54" parameterType="NVarChar" parameterName="@ContactName" name="@ContactName1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="e2d5992a-6b14-4469-ac95-0878b7f5b00a" parameterType="NVarChar" parameterName="@ContactTitle" name="@ContactTitle1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="aa90081a-a939-4e65-90f0-afc647232be7" parameterType="NVarChar" parameterName="@Address" name="@Address1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6dbcbdb0-5308-4121-999c-069db2253890" parameterType="NVarChar" parameterName="@City" name="@City1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3f88c680-fc6c-4262-b880-eb275a4cff41" parameterType="NVarChar" parameterName="@Region" name="@Region1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0962f024-df23-4993-a0cf-17290e1e8bb3" parameterType="NVarChar" parameterName="@PostalCode" name="@PostalCode1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9b31e826-aad1-49df-a290-49a307ad3ba2" parameterType="NVarChar" parameterName="@Country" name="@Country1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="54868139-d7aa-4332-8dd5-3c2782e0dae8" parameterType="NVarChar" parameterName="@Phone" name="@Phone1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7baee74d-56e0-44fe-8be3-f1ebc6c1cc54" parameterType="NVarChar" parameterName="@Fax" name="@Fax1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="807974ff-c17d-44ff-ba6c-da6c57d3fd87" parameterType="DateTime" parameterName="@LastEditDate" name="@LastEditDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="7940ddcd-6f70-4f6a-b8ba-8332326af905" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b9c76efb-1d7e-476c-aed3-6988e85d0a98" parameterType="NChar" parameterName="@CustomerID" name="@CustomerID2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3ae27567-6917-4367-a9a1-02580370aa93" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5b7cc7e0-10d4-44db-95be-3b1a2d71da74" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="c90ae2b2-285d-40f6-a984-60103fae72c4" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count2" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="edb962a2-f9e8-42f2-bfc4-253d788cc64d" parameterType="NChar" parameterName="@CustomerID" name="@CustomerID3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="1ac71a43-1b51-4c88-8703-40f4197085db" parameterType="NChar" parameterName="@CustomerID" name="@CustomerID4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="579d32ea-1658-44a8-bda6-ff330382bc17" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4293c2a2-e318-49aa-835d-0c3d2072feb0" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="8da0c4ab-70a6-47ad-8e8a-278e2ca569af" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="3486e2c8-c1cb-43bc-9ff5-f0105897b7ad" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5967d85b-9cb1-4812-9780-cda97a3184f8" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="75247ab4-6a0d-4edd-97b7-7254249e4e8f" parameterType="DateTime" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="87b2f28f-8219-48ad-86cb-5b6229211d37" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="82396cb0-94d7-49df-ad41-d0262b6fb295" parameterType="DateTime" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor3" parameterDirection="Output" />
+  </syncAdapterCommandParameters>
+  <syncConnections>
+    <syncConnection Id="520297c8-f3e5-427d-b4d3-9d3ad9d9010e" name="ClientConnection" connectionDisplayString="ClientNorthwindConnectionString (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="ClientNorthwindConnectionString" appSettingsPropertyReference="" />
+    <syncConnection Id="c1f81214-a56c-40fd-bd36-633a89687973" name="ServerConnection" connectionDisplayString="ServerNorthwindConnectionString (MySettings)" isAppSettings="true" appSettingsObjectName="MySettings" appSettingsPropertyName="ServerNorthwindConnectionString" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>
