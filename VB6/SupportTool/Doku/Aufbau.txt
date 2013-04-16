@@ -1,0 +1,34 @@
+Installprozess
+1. TightVNC Server Installieren (www.tightvnc.com)
+
+2. VPN Verbindung einrichten
+   C:\Dokumente und Einstellungen\All Users\Anwendungsdaten\Microsoft\Network\Connections\Pbk\rasphone.pbk
+    - Eintrag hinzufügen
+    
+3. RegEintrag für InstallOK setzen
+
+
+Fernwartungsprozess starten
+1. RegEintrag prüfen
+
+2. VNC Server starten
+
+3. VPN Verbindung starten
+    - 'shell rasdial Support "Support [$upp0rt]"'
+   
+4. Über Server-Client Tool Name und IP an Server senden
+
+
+Fernwartungsprozess beenden
+1. VPN Verbindung beenden
+   - 'shell rasdial Support /DISCONNECT'
+   
+2. VNC Server stoppen
+
+3. Über Server-Client Tool Ende der Sitzung bekantgeben
+
+4. Programm schließen.
+
+
+Benutzername: Support
+Kennwort: $upp0rt
