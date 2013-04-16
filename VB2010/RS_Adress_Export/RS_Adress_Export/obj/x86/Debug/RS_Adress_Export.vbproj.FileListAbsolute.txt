@@ -1,0 +1,13 @@
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\bin\Debug\RS_Adress_Export.exe
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\bin\Debug\RS_Adress_Export.pdb
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\bin\Debug\RS_Adress_Export.xml
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\ResolveAssemblyReference.cache
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\RS_Adress_Export.frmHaupt.resources
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\RS_Adress_Export.Resources.resources
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\ResGen.read.1.tlog
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\ResGen.write.1.tlog
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\RS_Adress_Export.exe
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\RS_Adress_Export.xml
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\obj\x86\Debug\RS_Adress_Export.pdb
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\bin\Debug\RS_Adress_Export.exe.config
+M:\DEV\VB\RS_Adress_Export\RS_Adress_Export\bin\Debug\Oracle.DataAccess.dll

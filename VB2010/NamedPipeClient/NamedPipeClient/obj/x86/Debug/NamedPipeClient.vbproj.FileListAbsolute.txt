@@ -1,0 +1,14 @@
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\ResolveAssemblyReference.cache
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.Form1.resources
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.Resources.resources
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\GenerateResource.read.1.tlog
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\GenerateResource.write.1.tlog
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\bin\Debug\NamedPipeClient.exe
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\bin\Debug\NamedPipeClient.pdb
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\bin\Debug\NamedPipeClient.xml
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.exe
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.xml
+M:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.pdb
+W:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.exe
+W:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.xml
+W:\DEV\VB\NamedPipeClient\NamedPipeClient\obj\x86\Debug\NamedPipeClient.pdb

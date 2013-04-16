@@ -1,0 +1,14 @@
+M:\DEV\VB\Handle\Handle\bin\Debug\Handle.exe
+M:\DEV\VB\Handle\Handle\bin\Debug\Handle.pdb
+M:\DEV\VB\Handle\Handle\bin\Debug\Handle.xml
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\ResolveAssemblyReference.cache
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.frmMain.resources
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.Resources.resources
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\GenerateResource.read.1.tlog
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\GenerateResource.write.1.tlog
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.exe
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.xml
+M:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.pdb
+W:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.exe
+W:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.xml
+W:\DEV\VB\Handle\Handle\obj\x86\Debug\Handle.pdb
