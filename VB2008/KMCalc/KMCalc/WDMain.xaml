@@ -1,0 +1,174 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Berechnung Kilometergeld" Height="600" Width="450" Name="wdMain" Icon="/KMCalc;component/Icon.png">
+    <Grid Height="555" HorizontalAlignment="Left" VerticalAlignment="Top" Width="430">
+        <StackPanel Name="Stack_Main" Orientation="Horizontal" Height="555" Width="430">
+            <StackPanel Name="Stack_Main1" Height="560" Width="350" Orientation="Vertical">
+                <GroupBox Header="Variante" Name="grpVar" Height="80" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <StackPanel Height="60" Name="Stack_Var" Width="340 ">
+                        <RadioButton Height="20" Name="rdLeasing" Width="340" IsChecked="True">Leasing</RadioButton>
+                        <RadioButton Height="20" Name="rdCredit" Width="340"  IsEnabled="True">Kredit</RadioButton>
+                        <RadioButton Height="20" Name="rdBar" Width="340" IsEnabled="True">Bar</RadioButton>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Finanzierung (Leasing)" Name="grpFactLeasing" Height="95" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                    <StackPanel Height="75" Name="Stack_FactLeasing" Width="340" Orientation="Vertical">
+                        <StackPanel Height="25" Name="Stack_FactLeasing1" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblDepositLeasing" Width="140">Anzahlung</Label>
+                            <TextBox Height="20" Name="txtDepositLeasing" Width="100" />
+                            <Label Height="24" Name="lblDespositLeasingDescr" Width="100"></Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactLeasing2" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblFactLeasing" Width="140">Leasing</Label>
+                            <TextBox Height="20" Name="txtFactLeasing" Width="100" />
+                            <Label Height="24" Name="lblFactLeasingDescr" Width="100">/ Monat</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactLeasing3" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblFinPayLeasing" Width="140">Restzahlung</Label>
+                            <TextBox Height="20" Name="txtFinPayLeasing" Width="100" />
+                            <Label Height="24" Name="lblFinPayLeasingDescr" Width="100"></Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Finanzierung (Kredit)" Name="grpFactCredit" Height="0" IsEnabled="False" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                    <StackPanel Height="100" Name="Stack_FactCredit" Width="340" Orientation="Vertical">
+                        <StackPanel Height="25" Name="Stack_FactCredit1" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblDepositCredit" Width="140">Anzahlung</Label>
+                            <TextBox Height="20" Name="txtDepositCredit" Width="100" />
+                            <Label Height="24" Name="lblDespositCreditDescr" Width="100"></Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactCredit2" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblFactCredit" Width="140">Kredit</Label>
+                            <TextBox Height="20" Name="txtFactCredit" Width="100" />
+                            <Label Height="24" Name="lblFactCreditDescr" Width="100">/ Monat</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactCredit3" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblFinPayCredit" Width="140">Restzahlung</Label>
+                            <TextBox Height="20" Name="txtFinPayCredit" Width="100" />
+                            <Label Height="24" Name="lblFinPayCreditDescr" Width="100"></Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactCredit4" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblLooseCredit" Width="140">Wertverlust</Label>
+                            <TextBox Height="20" Name="txtLooseCredit" Width="100" />
+                            <Label Height="24" Name="lblLooseCreditDescr" Width="100">/ Jahr</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Finanzierung (Bar)" Name="grpFactBar" Height="0" IsEnabled="False" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                    <StackPanel Height="50" Name="Stack_FactBar" Width="340" Orientation="Vertical">
+                        <StackPanel Height="25" Name="Stack_FactBar1" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblFactBar" Width="140">Kaufpreis</Label>
+                            <TextBox Height="20" Name="txtFactBar" Width="100" />
+                            <Label Height="24" Name="lblFactBarDescr" Width="100"></Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_FactBar2" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblLooseBar" Width="140">Wertverlust</Label>
+                            <TextBox Height="20" Name="txtLooseBar" Width="100" />
+                            <Label Height="24" Name="lblLooseBarDescr" Width="100">/ Jahr</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Allgemeine Daten" Name="grpBasic" Height="70" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                    <StackPanel Height="50" Name="Stack_Basic" Width="340" Orientation="Vertical">
+                        <StackPanel Height="25" Name="Stack_Basicl" Width="340" Orientation="Horizontal">
+                            <Label Height="24" Name="lblDuration" Width="140">Kalkulationsdauer</Label>
+                            <TextBox Height="20" Name="txtDuration" Width="100" />
+                            <Label Height="24" Name="lblDurationDescr" Width="100">Jahre</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_Basic2" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblKM" Width="140">Kilometerleistung</Label>
+                            <TextBox Height="20" Name="txtKM" Width="100" />
+                            <Label Height="24" Name="lblKMDescr" Width="100">/ Jahr</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Jährliche Kosten" Name="grpCostYear" Height="95" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <StackPanel Height="75" Name="Stack_CostYear" Orientation="Vertical" Width="340">
+                        <StackPanel Height="25" Name="Stack_CostYear1" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblService" Width="140">Servicekosten</Label>
+                            <TextBox Height="20" Name="txtService" Width="70" />
+                            <Label Height="24" Name="lblServiceDescr1" Width="15">/</Label>
+                            <TextBox Height="20" Name="txtServiceDuration" Width="30" />
+                            <Label Height="24" Name="lblServiceDescr2" Width="85">Jahr(e)</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_CostYear2" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblTires" Width="140">Reifen</Label>
+                            <TextBox Height="20" Name="txtTires" Width="70" />
+                            <Label Height="24" Name="lblTiresDescr1" Width="15">/</Label>
+                            <TextBox Height="20" Name="txtTiresDuration" Width="30" />
+                            <Label Height="24" Name="lblTiresDescr2" Width="85">Jahr(e)</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_CostYear3" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblRepair" Width="140">Reparaturen</Label>
+                            <TextBox Height="20" Name="txtRepair" Width="70" />
+                            <Label Height="24" Name="lblRepairDescr1" Width="15">/</Label>
+                            <TextBox Height="20" Name="txtRepairDuration" Width="30" />
+                            <Label Height="24" Name="lblRepairDescr2" Width="85">Jahr(e)</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Monatliche Kosten" Name="grpCostMonth" Height="45" VerticalAlignment="Top" HorizontalAlignment="Left" >
+                    <StackPanel Height="25" Name="Stack_CostMonth" Orientation="Vertical" Width="340">
+                        <StackPanel Height="25" Name="Stack_CostMonth1" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblInsur" Width="140">Versicherung</Label>
+                            <TextBox Height="20" Name="txtInsur" Width="100" />
+                            <Label Height="24" Name="lblInsurDescr" Width="100">/ Monat</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Verbrauch/Kosten Benzin/Diesel" Name="grpUsageGas" Height="120" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <StackPanel Height="100" Name="Stack_UsageGas" Orientation="Vertical" Width="340">
+                        <StackPanel Height="25" Name="Stack_UsageGas1" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblUsageCity" Width="140">Verbrauch (Stadt)</Label>
+                            <TextBox Height="20" Name="txtUsageCity" Width="100" />
+                            <Label Height="24" Name="lblUsageCityDescr" Width="100">/100 KM</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_UsageGas2" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblUsageCountry" Width="140">Verbrauch (Überland)</Label>
+                            <TextBox Height="20" Name="txtUsageCountry" Width="100" />
+                            <Label Height="24" Name="lblUsageCountryDescr" Width="100">/100 KM</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_UsageGas3" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblUsageHighway" Width="140">Verbrauch (Autobahn)</Label>
+                            <TextBox Height="20" Name="txtUsageHighway" Width="100" />
+                            <Label Height="24" Name="lblUsageHighwayDescr" Width="100">/100 KM</Label>
+                        </StackPanel>
+                        <StackPanel Height="25" Name="Stack_UsageGas4" Orientation="Horizontal" Width="340">
+                            <Label Height="24" Name="lblGas" Width="140">Kosten (Bezin/Diesel)</Label>
+                            <TextBox Height="20" Name="txtGas" Width="100" />
+                            <Label Height="24" Name="lblGasDescr" Width="100">/1 l</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <Button Name="btnCalc" Height="25" VerticalAlignment="Top">Kalkulieren</Button>
+            </StackPanel>
+            <StackPanel Name="Stack_Main2" Height="560" Width="80" Orientation="Vertical">
+                <StackPanel Name="Stack_Effect_Var" Height="80" Width="80" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Name="txtEffectVar" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Lime" Background="Transparent" />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_FactLeasing" Height="95" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectFactLeasing" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red"  />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_FactCredit" Height="0" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectFactCredit" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red"  />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_FactBar" Height="0" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectFactBar" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red"  />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_Basic" Height="70" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectBasic" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red"  />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_CostYear" Height="95" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectCostYear" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red" />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_CostMonth" Height="45" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectCostMonth" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red"  />
+                </StackPanel>
+                <StackPanel Name="Stack_Effect_UsageGas" Height="120" Width="80" Orientation="Horizontal">
+                    <TextBox Name="txtEffectUsageGas" Height="40" Width="80" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" IsEnabled="False" Text="" TextAlignment="Center" FontFamily="WingDings" FontSize="40" Foreground="Red" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
